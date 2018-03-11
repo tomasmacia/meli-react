@@ -16,7 +16,7 @@ function itemVIPParser(item) {
   i.author = authorName("Tomás", "Macía");
   i.item = itemParser(item);
   i.item.sold_quantity = item.sold_quantity;
-  i.item.free_shipping = item.free_shipping
+  i.item.free_shipping = item.free_shipping;
   //description
   return i;
 };

@@ -3,10 +3,16 @@ const React = require('react');
 class SearchBar extends React.Component {
   render(){
     return (
-      <input
-        type="text"
-        placeholder="Nunca dejes de buscar..."
-      />
+      <div>
+        <input
+          type="text"
+          placeholder="Nunca dejes de buscar..."
+          value={this.props.query}
+        />
+        <button>
+          SEARCH
+        </button>
+      </div>
     )
   }
 }
@@ -15,7 +21,7 @@ class Header extends React.Component {
   render() {
     return (
       <header className="header">
-        <SearchBar />
+        <SearchBar query={this.props.query}/>
       </header>
     )
   }
